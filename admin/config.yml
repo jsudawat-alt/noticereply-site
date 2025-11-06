@@ -1,12 +1,10 @@
 backend:
-  name: github
-  repo: jsudawat-alt/noticereply-site
+  name: git-gateway
   branch: main
-  auth_type: implicit
-  app_id: Ov23liwxbgjbb0c08XSO
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+
 site_url: "https://noticereply.com"
 
 collections:
@@ -17,22 +15,22 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "about.html"
         label: "About"
         name: "about"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "resources.html"
         label: "Resources"
         name: "resources"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "contact.html"
         label: "Contact"
         name: "contact"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "blog"
     label: "Blog"
@@ -40,7 +38,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
