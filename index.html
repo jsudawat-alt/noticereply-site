@@ -33,24 +33,101 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero wrap">
-      <div class="hero-left">
-        <span class="kicker">Trusted by professionals</span>
-        <h1>Practical GST & Income Tax guidance for businesses and professionals</h1>
-        <p class="lead">Guides, templates, and compliance checklists you can use today — written by experienced practitioners.</p>
-        <a class="cta" href="/resources.html">Our Services</a>
-      </div>
+<!-- ======= NOTICE REPLY hero banner (animated logo section) ======= -->
+<style>
+  .hero-logo {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background: linear-gradient(to bottom, #f5f9ff 0%, #ffffff 100%);
+    overflow: hidden;
+    position: relative;
+  }
 
-```
-  <aside class="hero-right">
-    <div class="card">
-      <h3 style="margin:0 0 8px">Quick Links</h3>
-      <p style="margin:0 0 12px;color:var(--muted)">Downloads, latest notifications, and appointment booking.</p>
-      <a class="cta" href="/resources.html" style="display:inline-block;padding:10px 12px">Explore resources</a>
-    </div>
-  </aside>
+  .hero-logo img {
+    width: clamp(180px, 35vw, 360px);
+    height: auto;
+    margin: 0 auto 25px;
+    display: block;
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+    animation: fadeUp 700ms ease forwards;
+    animation-delay: 140ms;
+  }
+
+  .hero-logo h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: #142b4d;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeUp 700ms ease forwards;
+    animation-delay: 300ms;
+  }
+
+  .hero-logo p {
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeUp 700ms ease forwards;
+    animation-delay: 460ms;
+  }
+
+  .divider {
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(245, 249, 255, 1), rgba(255, 255, 255, 0));
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-logo img, .hero-logo h1, .hero-logo p {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+
+<!-- ======= Top Logo Hero Section ======= -->
+<section class="hero-logo" aria-label="NOTICE REPLY introduction">
+  <img src="images/logo.png" alt="NOTICE REPLY logo" />
+  <h1>NOTICE REPLY</h1>
+  <p>Because every notice deserves a well-prepared reply.</p>
 </section>
+
+<!-- ======= Smooth Gradient Divider ======= -->
+<div class="divider"></div>
+
+<!-- ======= Main Hero Section ======= -->
+<main>
+  <section class="hero wrap">
+    <div class="hero-left">
+      <span class="kicker">Trusted by professionals</span>
+      <h1>Practical GST & Income Tax guidance for businesses and professionals</h1>
+      <p class="lead">
+        Guides, templates, and compliance checklists you can use today — written by experienced practitioners.
+      </p>
+      <a class="cta" href="/resources.html">Our Services</a>
+    </div>
+
+    <aside class="hero-right">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Quick Links</h3>
+        <p style="margin:0 0 12px;color:var(--muted)">
+          Downloads, latest notifications, and appointment booking.
+        </p>
+        <a class="cta" href="/resources.html" style="display:inline-block;padding:10px 12px">
+          Explore resources
+        </a>
+      </div>
+    </aside>
+  </section>
+</main>
 
 <section class="wrap">
   <div class="grid">
@@ -67,8 +144,7 @@
       <p style="color:var(--muted);margin:8px 0 0">Ready-to-use letters, forms and annexures.</p>
     </div>
   </div>
-</section>
-```
+</sectio
 
   </main>
 
@@ -83,7 +159,7 @@
       </div>
     </div>
 
-```
+
 <div class="wrap" style="margin-top:18px;border-top:1px solid #f2f2f2;padding-top:18px;display:flex;justify-content:space-between;align-items:center;gap:20px">
   <div style="font-size:14px;color:var(--muted)">Subscribe to our weekly newsletter for GST & Income Tax updates.</div>
   <div style="width:360px">
@@ -94,7 +170,7 @@
     </form>
   </div>
 </div>
-```
+
 
   </footer>
 </body><!-- Netlify Identity Widget -->
@@ -116,4 +192,3 @@ if (window.netlifyIdentity) {
 
 </html>
 
-</html>
