@@ -35,33 +35,34 @@
       <strong><a href="mailto:contact@noticereply.com">contact@noticereply.com</a></strong>
       or use the form below.
     </p>
+<!-- Netlify contact form -->
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" style="margin-top:20px;max-width:520px">
+  <input type="hidden" name="form-name" value="contact" />
 
-    <!-- Netlify form -->
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" style="margin-top:20px;max-width:520px">
-      <input type="hidden" name="form-name" value="contact" />
-      <p style="display:none">
-        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-      </p>
+  <p style="display:none">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
 
-      <label>Name<br />
-        <input type="text" name="name" required style="width:100%;padding:8px" />
-      </label><br /><br />
+  <label>Name<br />
+    <input type="text" name="name" required style="width:100%;padding:8px" />
+  </label><br /><br />
 
-      <label>Email<br />
-        <input type="email" name="email" required style="width:100%;padding:8px" />
-      </label><br /><br />
+  <label>Email<br />
+    <input type="email" name="email" required style="width:100%;padding:8px" />
+  </label><br /><br />
 
-      <label>Message<br />
-        <textarea name="message" rows="6" required style="width:100%;padding:8px"></textarea>
-      </label><br /><br />
+  <label>Message<br />
+    <textarea name="message" rows="6" required style="width:100%;padding:8px"></textarea>
+  </label><br /><br />
 
-      <div data-netlify-recaptcha="true"></div>
+  <div data-netlify-recaptcha="true"></div>
 
-      <button type="submit" class="cta" style="padding:10px 18px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer">
-        Send message
-      </button>
-    </form>
+  <button type="submit" class="cta" style="padding:10px 18px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer">
+    Send message
+  </button>
+</form>
 
+   
     <p style="margin-top:20px;color:var(--muted);font-size:14px">
       We typically respond within one business day. For urgent queries, email directly at 
       <a href="mailto:contact@noticereply.com">contact@noticereply.com</a>.
