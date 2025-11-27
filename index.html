@@ -87,52 +87,84 @@
 
     <!-- Why NOTICEREPLY -->
     <section class="wrap" style="margin-top:22px; padding-bottom:12px;">
-      <div class="content-columns">
-        <div class="content-left">
-          <h2 style="margin:0 0 12px;">Why NOTICEREPLY?</h2>
-          <p style="color:#4b5563;max-width:820px;">
-            Notices are legal communications requiring timely, well-structured responses. At NOTICEREPLY we provide:
-          </p>
-          <ul class="list-check" style="color:#374151;">
-            <li>✅ Step-by-step guidance for each type of notice.</li>
-            <li>🧾 Ready-to-edit reply formats and templates.</li>
-            <li>⚖️ Expert interpretation of law with case-based examples.</li>
-            <li>📰 Concise, reliable regulatory updates curated for practitioners.</li>
-          </ul>
+<!-- START: fixed two-column layout (replace existing <div class="content-columns"> block) -->
+<div class="content-columns" style="display:flex;gap:24px;align-items:flex-start;justify-content:space-between;">
 
-          <div class="features-row">
-            <div class="grid">
-              <div class="feature">
-                <h4>Income Tax Notices</h4>
-                <p style="color:#6b7280;margin-top:8px;">Identify, analyse and reply: 139(9), 143(1), 142(1), 143(2), 148, 245 — with editable reply drafts.</p>
-                <div style="margin-top:12px;"><a class="cta" href="/income-tax-notices.html">View Income Tax Notices</a></div>
-              </div>
+  <!-- LEFT / MAIN COLUMN -->
+  <div class="content-left" style="flex:1 1 auto; max-width:780px; margin-right:40px;">
+    <!-- HERO (existing content should remain here) -->
+    <h1 style="margin:0 0 12px;font-size:2.25rem;line-height:1.05;">Because every notice deserves a well-prepared reply.</h1>
+    <p class="lead" style="color:var(--muted);max-width:780px;">
+      NOTICEREPLY is India’s expert-driven platform helping taxpayers, professionals, and businesses respond effectively to notices under Income Tax and GST laws.
+      Backed by 25+ years’ tax practice, our mission is to convert confusion into clarity and compliance into confidence.
+    </p>
+    <p style="margin-top:18px;">
+      <a class="cta" href="/resources.html" style="display:inline-block;padding:12px 18px;border-radius:8px;background:#0b2b47;color:#fff;text-decoration:none;">Explore Resources</a>
+    </p>
 
-              <div class="feature">
-                <h4>GST Notices</h4>
-                <p style="color:#6b7280;margin-top:8px;">DRC-01A, ASMT-10 and related notices — reconciliation and drafting examples to avoid penalties.</p>
-                <div style="margin-top:12px;"><a class="cta" href="/gst-notices.html">View GST Notices</a></div>
-              </div>
+    <!-- WHY NOTICEREPLY (move here so it is in main column) -->
+    <section id="why-noticereply" style="margin-top:26px;padding-bottom:12px;">
+      <h2 style="margin-top:6px;font-size:1.25rem;">Why NOTICEREPLY?</h2>
+      <p style="color:#666;max-width:720px;">
+        Notices are legal communications requiring timely, well-structured responses. At NOTICEREPLY we provide:
+      </p>
+      <ul style="color:#333; margin-left:1.1rem; line-height:1.8;">
+        <li>✅ Step-by-step guidance for each type of notice.</li>
+        <li>🧾 Ready-to-edit reply formats and templates.</li>
+        <li>⚖️ Expert interpretation of law with case-based examples.</li>
+        <li>📰 Concise, reliable regulatory updates curated for practitioners.</li>
+      </ul>
 
-              <div class="feature">
-                <h4>Templates & Drafts</h4>
-                <p style="color:#6b7280;margin-top:8px;">Professionally written sample replies, reconciliation templates and annexures.</p>
-                <div style="margin-top:12px;"><a class="cta" href="/templates.html">Open Templates</a></div>
-              </div>
-            </div>
-          </div>
+      <!-- FEATURE CARDS (centered row under Why) -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:18px;">
+        <div style="border:1px solid #eee;padding:16px;border-radius:10px;background:#fff;">
+          <strong>Income Tax Notices</strong>
+          <p style="color:#666;font-size:0.92rem;margin-top:8px;">Identify, analyse and reply: 139(9), 143(1), 142(1), 143(2), 148, 245 — with editable reply drafts.</p>
+          <p style="margin-top:10px;"><a class="btn" href="/income-tax-notices.html" style="display:inline-block;padding:8px 12px;border-radius:6px;background:#0b2b47;color:#fff;text-decoration:none;">View Income Tax Notices</a></p>
         </div>
 
-        <div class="content-right" style="margin-top:6px;">
-          <div style="background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(20,30,50,0.06);">
-            <h4 style="margin:0 0 8px;">Latest Updates</h4>
-            <p style="color:#6b7280;margin-bottom:12px;">CBDT/CBIC circulars, amendments and landmark judgments — curated so you can act fast.</p>
-            <a class="cta" href="/updates.html">Read the Notice Reply Digest</a>
-          </div>
+        <div style="border:1px solid #eee;padding:16px;border-radius:10px;background:#fff;">
+          <strong>GST Notices</strong>
+          <p style="color:#666;font-size:0.92rem;margin-top:8px;">DRC-01A, ASMT-10 and related notices — reconciliation and drafting examples to avoid penalties.</p>
+          <p style="margin-top:10px;"><a class="btn" href="/gst-notices.html" style="display:inline-block;padding:8px 12px;border-radius:6px;background:#0b2b47;color:#fff;text-decoration:none;">View GST Notices</a></p>
+        </div>
+
+        <div style="border:1px solid #eee;padding:16px;border-radius:10px;background:#fff;">
+          <strong>Templates & Drafts</strong>
+          <p style="color:#666;font-size:0.92rem;margin-top:8px;">Professionally written sample replies, reconciliation templates and annexures.</p>
+          <p style="margin-top:10px;"><a class="btn" href="/templates.html" style="display:inline-block;padding:8px 12px;border-radius:6px;background:#0b2b47;color:#fff;text-decoration:none;">Open Templates</a></p>
         </div>
       </div>
-    </section>
 
+      <p style="margin-top:18px;color:#666;">Our Mission — To make tax notice handling simple, transparent, and professionally accurate — without panic, confusion, or costly errors. Need expert help? <a href="/contact.html">Contact Us</a>.</p>
+    </section>
+    <!-- end left/main column -->
+  </div>
+
+  <!-- RIGHT / SIDEBAR (compact fixed width) -->
+  <aside class="hero-right content-right" aria-label="Quick links" style="width:260px;flex-shrink:0;">
+    <div class="card" style="padding:14px;border-radius:10px;margin-bottom:18px;">
+      <h3 style="margin:0 0 8px;font-size:1rem;">Quick Links</h3>
+      <p style="margin:0 0 8px;color:var(--muted);font-size:0.95rem;">Jump to the most useful sections.</p>
+      <ul style="margin:0;padding-left:18px;line-height:1.9;">
+        <li><a href="/income-tax-notices.html">Income Tax Notices</a></li>
+        <li><a href="/gst-notices.html">GST Notices</a></li>
+        <li><a href="/templates.html">Templates & Drafts</a></li>
+        <li><a href="/updates.html">Latest Updates</a></li>
+        <li><a href="/tools.html">Tools & Checklists</a></li>
+      </ul>
+    </div>
+
+    <!-- Latest Updates (keep this only) -->
+    <div class="card" style="padding:14px;border-radius:10px;">
+      <h4 style="margin:0 0 8px;font-size:0.95rem;">Latest Updates</h4>
+      <p style="font-size:0.9rem;color:#666;margin:0 0 8px;">CBDT/CBIC circulars, amendments and landmark judgments — curated so you can act fast.</p>
+      <a href="/updates.html" style="display:inline-block;padding:8px 10px;border-radius:6px;background:#0b2b47;color:#fff;text-decoration:none;font-size:0.9rem;">Read the Notice Reply Digest</a>
+    </div>
+  </aside>
+
+</div>
+<!-- END: fixed two-column layout replacement -->
     <!-- Mission & Tools -->
     <section class="wrap" style="margin-top:36px; padding-bottom:40px;">
       <h3>Our Mission</h3>
